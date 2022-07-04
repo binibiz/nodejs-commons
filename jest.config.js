@@ -22,8 +22,8 @@ const config = {
     "node",
   ],
   moduleNameMapper: {
-    "^@binibiz/(.*)/lib/(.*)": "<rootDir>/packages/$1/src/$2",
-    "^@binibiz/([^/]*)$": "<rootDir>/packages/$1/src",
+    "^@binibiz/(.*)/lib/(.*)": "<rootDir>/packages/$1/lib/$2",
+    "^@binibiz/([^/]*)$": "<rootDir>/packages/$1",
   },
   setupFilesAfterEnv: [
     "./jest.setup.ts",

@@ -1,4 +1,4 @@
-import { TraceContext } from "./packages/tracer/lib";
+import { TraceContext } from "./packages/tracer";
 
 jest.setTimeout(40000); // eslint-disable-line @typescript-eslint/no-magic-numbers
 

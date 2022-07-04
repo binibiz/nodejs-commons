@@ -1,4 +1,4 @@
-import { MongoClient } from ".";
+import { MongoClient } from "./client";
 
 //#####################################################
 // Test definitions
