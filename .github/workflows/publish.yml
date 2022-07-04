@@ -13,6 +13,9 @@ jobs:
   
     # https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
     steps:
+      - name: Install Build Essential
+        run: apt install -y build-essential
+
       - name: Checkout
         uses: actions/checkout@v3
         with:
@@ -27,6 +30,9 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: 'yarn'
 
+      - name: Install dependencies
+        run: yarn install
+
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -35,5 +41,5 @@ jobs:
           npm config set access public
           git config --global user.email binibot@nosebit.com
           git config --global user.name binibot
-          npx lerna run build
-          npx lerna publish --yes
+          yarn lerna run build
+          yarn lerna publish --yes
