@@ -23,9 +23,14 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
-      
+
+      - name: Install Dependencies 
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: install
+
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
