@@ -14,7 +14,7 @@ jobs:
     # https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
     steps:
       - name: Install Build Essential
-        run: apt install -y build-essential
+        run: sudo apt install -y build-essential
 
       - name: Checkout
         uses: actions/checkout@v3
