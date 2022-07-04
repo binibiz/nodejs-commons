@@ -1,7 +1,7 @@
 {
   "name": "@binibiz/thrift",
   "packageManager": "yarn@3.2.1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A set of utilitary modules for thrift.",
   "files": [
     "lib"
@@ -20,8 +20,8 @@
     "@types/thrift": "^0.10.11"
   },
   "dependencies": {
-    "@binibiz/tracer": "^1.0.0",
-    "@binibiz/utils": "^1.0.0",
+    "@binibiz/tracer": "^1.1.0",
+    "@binibiz/utils": "^1.1.0",
     "lodash": "^4.17.21",
     "thrift": "^0.16.0"
   },
