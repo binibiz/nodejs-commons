@@ -1,0 +1,101 @@
+version: 1
+
+acts:
+  log:
+    cmds: echo "🍺 [nodejs-commons]" {{.CliArgs}}
+
+  build:
+    cmds:
+      - yarn lerna run build
+
+  deps:
+    cmds: yarn install
+
+  git:
+    acts:
+      commit:
+        acts:
+          _:
+            cmds: yarn git-cz
+          all:
+            cmds:
+              - git add .
+              - act: commit
+      hooks:
+        cmds:
+          - act: log Installing git hooks
+          - |
+            basedir=$PWD
+            mkdir -p .git/hooks
+            rm -f .git/hooks/*
+            chmod u+x ./hooks/*
+
+            for f in $(ls ./hooks); do
+              ln -s ../../hooks/$f $basedir/.git/hooks/$f
+            done
+
+  init:
+    cmds:
+      - act: deps
+      - act: setup
+
+  lint:
+    cmds:
+      - act: log Linting
+      - yarn eslint . --ext .ts --ext .js
+
+  publish:
+    acts:
+      _:
+        cmds: yarn lerna publish --yes
+      npm:
+        cmds: npm publish --access=public
+
+  push:
+    cmds:
+      - act: build
+      - |
+        if [ -n "$(git status --porcelain)" ]; then
+          git add .
+          git commit -m 'build(release): build libs for release [skip-ci]'
+          git push
+        else
+          echo "Nothing to commit after build"
+        fi
+
+  setup:
+    cmds:
+      - act: log "Setting up"
+      - act: git.hooks
+
+
+  test:
+    acts:
+      integ:
+        acts:
+          _:
+            start:
+              - act: log Running integration tests
+              - printf "COMPOSE_PROJECT_NAME=nodejs-commons-test-integ\n" >> $ACT_ENV
+              - docker compose up -d
+              - echo "Waiting..."; sleep 10
+              - NODE_ENV=test-integ jest {{.CliArgs}} --passWithNoTests --config ./jest.config.js
+            teardown:
+              - docker compose down
+          ci:
+            cmds:
+              - NODE_ENV=test-integ yarn jest {{.CliArgs}} --passWithNoTests --config ./jest.config.js
+
+      unit:
+        acts:
+          _:
+            cmds:
+              - act: log Running unit tests
+              - NODE_ENV=test-unit yarn jest {{.CliArgs}} --passWithNoTests --config ./jest.config.js
+          ci:
+            cmds:
+              - act: log Running CI unit tests
+              - NODE_ENV=test-unit-ci yarn jest --passWithNoTests --config ./jest.config.js
+
+  version:
+    cmds: yarn lerna version

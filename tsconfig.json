@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@binibiz/mongo": [
+        "packages/mongo/lib"
+      ],
+      "@binibiz/tracer": [
+        "packages/tracer/lib"
+      ],
+      "@binibiz/tracer/lib/*": [
+        "packages/tracer/lib/*"
+      ],
+      "@binibiz/utils": [
+        "packages/utils/lib"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./packages/**/*",
+    "./*.js",
+    "./*.ts",
+    "./.eslintrc.js"
+  ]
+}

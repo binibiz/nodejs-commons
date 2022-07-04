@@ -1,0 +1,33 @@
+{
+  "name": "@binibiz/redis",
+  "packageManager": "yarn@3.2.1",
+  "version": "1.0.0",
+  "description": "A set of utilitary modules for redis.",
+  "files": [
+    "lib"
+  ],
+  "main": "index.js",
+  "repository": "git@github.com:binibiz/nodejs-commons.git",
+  "author": "Nosebit Dev <dev@nosebit.com>",
+  "scripts": {
+    "tsc": "tsc --project tsconfig.build.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/ioredis": "^4.28.10",
+    "@types/jsonwebtoken": "^8.5.8"
+  },
+  "dependencies": {
+    "@binibiz/tracer": "^1.0.0",
+    "@binibiz/utils": "^1.0.0",
+    "dayjs": "^1.1.3",
+    "ioredis": "^5.1.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "volta": {
+    "node": "14.19.1",
+    "yarn": "1.22.10"
+  }
+}
