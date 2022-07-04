@@ -25,11 +25,10 @@ jobs:
         with:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
+          cache: 'yarn'
 
-      - name: Install Dependencies 
-        uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: global add ts-node lerna
+      - name: Install Global Dependencies
+        run: yarn global add ts-node lerna
 
       - name: Publish
         env:
