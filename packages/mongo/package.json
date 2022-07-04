@@ -10,7 +10,7 @@
   "repository": "git@github.com:binibiz/nodejs-commons.git",
   "author": "Nosebit Dev <dev@nosebit.com>",
   "scripts": {
-    "tsc": "tsc --project tsconfig.build.json"
+    "tsc": "npx tsc --project tsconfig.build.json"
   },
   "publishConfig": {
     "access": "public"

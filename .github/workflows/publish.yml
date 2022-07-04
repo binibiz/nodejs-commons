@@ -27,9 +27,6 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: 'yarn'
 
-      - name: Install Global Dependencies
-        run: yarn global add ts-node lerna
-
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -38,5 +35,5 @@ jobs:
           npm config set access public
           git config --global user.email binibot@nosebit.com
           git config --global user.name binibot
-          yarn lerna run build
-          yarn lerna publish --yes
+          npx lerna run build
+          npx lerna publish --yes
