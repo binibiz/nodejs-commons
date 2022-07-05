@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/binibiz/nodejs-commons/compare/@binibiz/thrift@1.1.2...@binibiz/thrift@1.1.3) (2022-07-05)
+
+
+### Bug Fixes
+
+* **thrift:** build script ([07eed82](https://github.com/binibiz/nodejs-commons/commit/07eed825fe4752d88b6fd71e0d43a65834a80929))
+
+
+
+
+
 ## [1.1.2](https://github.com/binibiz/nodejs-commons/compare/@binibiz/thrift@1.1.1...@binibiz/thrift@1.1.2) (2022-07-05)
 
 

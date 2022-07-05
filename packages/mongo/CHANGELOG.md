@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/binibiz/nodejs-commons/compare/@binibiz/mongo@1.1.2...@binibiz/mongo@1.1.3) (2022-07-05)
+
+
+### Bug Fixes
+
+* **mongo:** build script ([1ce00c8](https://github.com/binibiz/nodejs-commons/commit/1ce00c86ccc590d9269ee68b8011396bfcdf34bc))
+
+
+
+
+
 ## [1.1.2](https://github.com/binibiz/nodejs-commons/compare/@binibiz/mongo@1.1.1...@binibiz/mongo@1.1.2) (2022-07-05)
 
 

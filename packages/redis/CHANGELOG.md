@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/binibiz/nodejs-commons/compare/@binibiz/redis@1.1.2...@binibiz/redis@1.1.3) (2022-07-05)
+
+
+### Bug Fixes
+
+* **redis:** build script ([417bb3d](https://github.com/binibiz/nodejs-commons/commit/417bb3d7a0f94f0d942c6c13f71caf3dbd13c913))
+
+
+
+
+
 ## [1.1.2](https://github.com/binibiz/nodejs-commons/compare/@binibiz/redis@1.1.1...@binibiz/redis@1.1.2) (2022-07-05)
 
 
