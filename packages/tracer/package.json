@@ -1,7 +1,7 @@
 {
   "name": "@binibiz/tracer",
   "packageManager": "yarn@3.2.1",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A nodejs tracer providing both tracing and logging.",
   "files": [
     "*"
@@ -19,7 +19,7 @@
     "@types/lodash": "^4.14.182"
   },
   "dependencies": {
-    "@binibiz/utils": "^1.1.1",
+    "@binibiz/utils": "^1.1.2",
     "@sentry/browser": "^7.5.0",
     "@sentry/node": "^7.5.0",
     "@sentry/tracing": "^7.5.0",

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/binibiz/nodejs-commons/compare/@binibiz/mongo@1.1.1...@binibiz/mongo@1.1.2) (2022-07-05)
+
+
+### Bug Fixes
+
+* ignore tsconfig and npmignore files in npm package ([9f0f28a](https://github.com/binibiz/nodejs-commons/commit/9f0f28a3c171d2ed73d5b5ed8c403fe25a36b267))
+* **mongo:** release it again to see if index.js is published ([bf83866](https://github.com/binibiz/nodejs-commons/commit/bf8386682e88811674f769c84f24fead657be54a))
+
+
+
+
+
 ## [1.1.1](https://github.com/binibiz/nodejs-commons/compare/@binibiz/mongo@1.1.0...@binibiz/mongo@1.1.1) (2022-07-04)
 
 
