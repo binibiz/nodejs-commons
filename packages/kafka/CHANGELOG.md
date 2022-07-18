@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/binibiz/nodejs-commons/compare/@binibiz/kafka@1.1.2...@binibiz/kafka@1.1.3) (2022-07-18)
+
+**Note:** Version bump only for package @binibiz/kafka
+
+
+
+
+
 ## [1.1.2](https://github.com/binibiz/nodejs-commons/compare/@binibiz/kafka@1.1.1...@binibiz/kafka@1.1.2) (2022-07-05)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/binibiz/nodejs-commons/compare/@binibiz/tracer@1.1.2...@binibiz/tracer@1.2.0) (2022-07-18)
+
+
+### Features
+
+* **tracer:** add console log driver as the default driver ([6809486](https://github.com/binibiz/nodejs-commons/commit/6809486c1a906554e08d2bd19e6103d06c23f368))
+
+
+
+
+
 ## [1.1.2](https://github.com/binibiz/nodejs-commons/compare/@binibiz/tracer@1.1.1...@binibiz/tracer@1.1.2) (2022-07-05)
 
 
