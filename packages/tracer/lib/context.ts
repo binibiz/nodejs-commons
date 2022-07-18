@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 import _ from "lodash";
 import { customAlphabet } from "nanoid";
 
-import ConsoleLogDriver from "./drivers/pino";
+import ConsoleLogDriver from "./drivers/console";
 import Logger from "./logger";
 import {
   ICallStackNamesChainItem,
