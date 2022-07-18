@@ -1,4 +1,4 @@
-import { getUrlParts } from "@binibiz/utils";
+import { getUrlParts } from "@binibiz/utils/lib/url";
 import chalk from "chalk";
 import dayjs from "dayjs";
 import _ from "lodash";
