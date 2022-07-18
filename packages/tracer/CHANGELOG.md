@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/binibiz/nodejs-commons/compare/@binibiz/tracer@1.2.0...@binibiz/tracer@1.3.0) (2022-07-18)
+
+
+### Features
+
+* **tracer:** prevent importing the whole @binibiz/utils so it can work on react native ([c1c7737](https://github.com/binibiz/nodejs-commons/commit/c1c7737aa872f426429fa212a6b4d5177e4957ad))
+
+
+
+
+
 # [1.2.0](https://github.com/binibiz/nodejs-commons/compare/@binibiz/tracer@1.1.2...@binibiz/tracer@1.2.0) (2022-07-18)
 
 
