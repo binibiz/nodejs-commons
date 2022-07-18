@@ -38,7 +38,7 @@ export interface ILogDriverLogOpts {
  * Driver that going to perform the logging.
  */
 export interface ILogDriver {
-  init(): void;
+  init(serviceName: string): void;
   log(
     level: TLogLevel,
     message: string,

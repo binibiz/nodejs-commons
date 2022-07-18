@@ -1,7 +1,6 @@
 import dayjs from "dayjs";
 import pino from "pino";
 
-import TraceContext from "../context";
 import {
   ILogDriver,
   ILogDriverLogOpts,
@@ -33,14 +32,23 @@ const browserLevelColors = {
  */
 class PinoLogDriver implements ILogDriver {
   /**
+   * Service name.
+   */
+  private _serviceName: string;
+
+  /**
    * Underlying logger to use.
    */
   private _logger: pino.Logger;
 
   /**
    * This function going to initialize the driver.
+   *
+   * @param serviceName -
    */
-  public init() {
+  public init(serviceName: string) {
+    this._serviceName = serviceName;
+
     let transport: any;
 
     /**
@@ -72,7 +80,7 @@ class PinoLogDriver implements ILogDriver {
           } = logObj;
 
           // eslint-disable-next-line prefer-destructuring
-          const traceCtx: TraceContext = logObj.traceCtx;
+          const traceCtx: ITraceContext = logObj.traceCtx;
 
           const timeWithStyles = [
             `%c${dayjs(time).toISOString()}`,
@@ -207,7 +215,7 @@ class PinoLogDriver implements ILogDriver {
         },
       },
       level: "debug",
-      name: TraceContext.serviceName,
+      name: this._serviceName,
     }, transport);
   }
 

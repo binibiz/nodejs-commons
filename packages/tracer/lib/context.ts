@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 import _ from "lodash";
 import { customAlphabet } from "nanoid";
 
-import PinoLogDriver from "./drivers/pino";
+import ConsoleLogDriver from "./drivers/pino";
 import Logger from "./logger";
 import {
   ICallStackNamesChainItem,
@@ -402,7 +402,7 @@ class TraceContext<TData = any> implements ITraceContext<TData> {
       TraceContext._serviceName = config.serviceName;
       TraceContext._serviceColor = config.serviceColor;
       TraceContext._traceDriver = config.traceDriver;
-      TraceContext._logDriver = config.logDriver ?? new PinoLogDriver();
+      TraceContext._logDriver = config.logDriver ?? new ConsoleLogDriver();
       TraceContext._logLevel = config.logLevel;
       TraceContext._shared = new TraceContext({ fnName: "main" });
       TraceContext._injectMode
@@ -428,7 +428,7 @@ class TraceContext<TData = any> implements ITraceContext<TData> {
        * created shared trace context.
        */
       if (TraceContext._logDriver) {
-        TraceContext._logDriver.init();
+        TraceContext._logDriver.init(TraceContext.serviceName);
       }
     }
 
