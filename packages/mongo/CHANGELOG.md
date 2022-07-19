@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/binibiz/nodejs-commons/compare/@binibiz/mongo@1.1.6...@binibiz/mongo@1.1.7) (2022-07-19)
+
+**Note:** Version bump only for package @binibiz/mongo
+
+
+
+
+
 ## [1.1.6](https://github.com/binibiz/nodejs-commons/compare/@binibiz/mongo@1.1.5...@binibiz/mongo@1.1.6) (2022-07-18)
 
 **Note:** Version bump only for package @binibiz/mongo

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/binibiz/nodejs-commons/compare/@binibiz/tracer@1.3.1...@binibiz/tracer@1.4.0) (2022-07-19)
+
+
+### Features
+
+* **tracer:** replace not maintained lzutf8 by lz-string ([7bd8b3a](https://github.com/binibiz/nodejs-commons/commit/7bd8b3aaeced77752518a1ab066768ed587c552c))
+
+
+
+
+
 ## [1.3.1](https://github.com/binibiz/nodejs-commons/compare/@binibiz/tracer@1.3.0...@binibiz/tracer@1.3.1) (2022-07-18)
 
 
