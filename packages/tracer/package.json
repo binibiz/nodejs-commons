@@ -16,7 +16,8 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.182"
+    "@types/lodash": "^4.14.182",
+    "@types/lz-string": "^1.3.34"
   },
   "dependencies": {
     "@binibiz/utils": "^1.2.0",
@@ -27,7 +28,7 @@
     "dayjs": "^1.11.3",
     "jaeger-client": "^3.19.0",
     "lodash": "^4.17.21",
-    "lzutf8": "^0.6.2",
+    "lz-string": "^1.4.4",
     "nanoid": "^3.3.4",
     "pino": "^8.1.0",
     "pino-abstract-transport": "^1.0.0",

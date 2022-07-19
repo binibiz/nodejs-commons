@@ -482,11 +482,12 @@ __metadata:
     "@sentry/node": ^7.5.0
     "@sentry/tracing": ^7.5.0
     "@types/lodash": ^4.14.182
+    "@types/lz-string": ^1.3.34
     chalk: ^5.0.1
     dayjs: ^1.11.3
     jaeger-client: ^3.19.0
     lodash: ^4.17.21
-    lzutf8: ^0.6.2
+    lz-string: ^1.4.4
     nanoid: ^3.3.4
     pino: ^8.1.0
     pino-abstract-transport: ^1.0.0
@@ -2386,6 +2387,13 @@ __metadata:
   version: 4.14.182
   resolution: "@types/lodash@npm:4.14.182"
   checksum: 7dd137aa9dbabd632408bd37009d984655164fa1ecc3f2b6eb94afe35bf0a5852cbab6183148d883e9c73a958b7fec9a9bcf7c8e45d41195add6a18c34958209
+  languageName: node
+  linkType: hard
+
+"@types/lz-string@npm:^1.3.34":
+  version: 1.3.34
+  resolution: "@types/lz-string@npm:1.3.34"
+  checksum: e5c5ec0b9b9bfb0a64ca883152ce753244f53a6f12d8d3ba1a363262bea07fed1cd04c399a33a5d600a665d15a39a58bf5fd1ad9c52a98bccf7511f7a42e82f7
   languageName: node
   linkType: hard
 
@@ -6663,12 +6671,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lzutf8@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "lzutf8@npm:0.6.2"
-  dependencies:
-    readable-stream: ^3.6.0
-  checksum: c8c8e6d7e5c77dafa746489bb99447907ba68f92be2db5206338ccc668c1d7283e5d9b64394e6b276c3d119275f51c3ebe55aa2af0e3777f89239498e27fba69
+"lz-string@npm:^1.4.4":
+  version: 1.4.4
+  resolution: "lz-string@npm:1.4.4"
+  bin:
+    lz-string: bin/bin.js
+  checksum: 54e31238a61a84d8f664d9860a9fba7310c5b97a52c444f80543069bc084815eff40b8d4474ae1d93992fdf6c252dca37cf27f6adbeb4dbc3df2f3ac773d0e61
   languageName: node
   linkType: hard
 

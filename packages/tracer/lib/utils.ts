@@ -1,4 +1,4 @@
-import LZUTF8 from "lzutf8";
+import LZString from "lz-string";
 
 import {
   ITraceHashData,
@@ -21,9 +21,7 @@ const TRACE_HASH_PREFIX = "$TRACE_HASH_";
 function hashEncode(
   hashData: ITraceHashData,
 ) {
-  const base64Hash = LZUTF8.compress(JSON.stringify(hashData), {
-    outputEncoding: "Base64",
-  }) as string;
+  const base64Hash = LZString.compressToBase64(JSON.stringify(hashData));
 
   return `${TRACE_HASH_PREFIX}${base64Hash}`;
 }
@@ -38,9 +36,7 @@ function hashDecode(
 ) {
   const base64Hash = hash.replace(TRACE_HASH_PREFIX, "");
 
-  const hashDataStr = LZUTF8.decompress(base64Hash, {
-    inputEncoding: "Base64",
-  });
+  const hashDataStr = LZString.decompressFromBase64(base64Hash);
 
   const hashData: ITraceHashData = JSON.parse(hashDataStr);
 
