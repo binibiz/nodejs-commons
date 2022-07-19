@@ -422,7 +422,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@binibiz/kafka@workspace:packages/kafka"
   dependencies:
-    "@binibiz/tracer": ^1.3.0
+    "@binibiz/tracer": ^1.3.1
     "@binibiz/utils": ^1.2.0
     "@types/lodash": ^4.14.182
     dayjs: ^1.11.3
@@ -437,7 +437,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@binibiz/mongo@workspace:packages/mongo"
   dependencies:
-    "@binibiz/tracer": ^1.3.0
+    "@binibiz/tracer": ^1.3.1
     "@binibiz/utils": ^1.2.0
     "@types/lodash": ^4.14.182
     dayjs: ^1.11.3
@@ -450,7 +450,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@binibiz/redis@workspace:packages/redis"
   dependencies:
-    "@binibiz/tracer": ^1.3.0
+    "@binibiz/tracer": ^1.3.1
     "@binibiz/utils": ^1.2.0
     "@types/ioredis": ^4.28.10
     "@types/jsonwebtoken": ^8.5.8
@@ -464,7 +464,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@binibiz/thrift@workspace:packages/thrift"
   dependencies:
-    "@binibiz/tracer": ^1.3.0
+    "@binibiz/tracer": ^1.3.1
     "@binibiz/utils": ^1.2.0
     "@types/lodash": ^4.14.182
     "@types/thrift": ^0.10.11
@@ -473,7 +473,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@binibiz/tracer@^1.3.0, @binibiz/tracer@workspace:packages/tracer":
+"@binibiz/tracer@^1.3.1, @binibiz/tracer@workspace:packages/tracer":
   version: 0.0.0-use.local
   resolution: "@binibiz/tracer@workspace:packages/tracer"
   dependencies:
